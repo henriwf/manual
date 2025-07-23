@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f2f4f7; /* azul clarinho */
+  color: #2b3a42;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2176ff;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  color: #1d5dc0;
+  border-left: 6px solid #bbdefb;
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #144272;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  list-style: none;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+li::before {
+  content: '➤';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #b3e5fc;
+}
+
+/* Bloco de alerta ou fofura */
+.destaque {
+  background-color: #e3f2fd;
+  border-left: 5px solid #64b5f6;
+  padding: 16px;
+  margin: 30px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #1a3c6b;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.04);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  body {
+    padding: 32px 16px;
+    font-size: 0.97rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
